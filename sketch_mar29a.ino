@@ -59,7 +59,7 @@ float oliversBatteryLevel() {
   return batteryLevel;
 }
 void loop() {
-  strip.setBrightness(oliversBatteryLevel()*100);
+  strip.setBrightness(oliversBatteryLevel()*255);
   if( EEPROM.read(0) == 0 ){
   
   
